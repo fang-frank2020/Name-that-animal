@@ -1,0 +1,110 @@
+body {
+    margin:0;
+    font-family:Sans-Serif;
+}
+.top {
+    height:80px;
+    background-color: #8BC34A;
+    position:relative;
+    color:white;
+    top:0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#SLIDESHOW {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation:slide 16s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url("classroom.png");
+    animation-name: slides_img;
+    animation-play-state: running;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes slides_img {
+    0% {
+        background-image: url("images/panda.jpg"), url("images/tiger.jpg");
+    }
+    25% {
+        background-image: url("images/tiger.jpg"), url("images/turtle.jpg");
+    }
+    50% {
+        background-image: url("images/turtle.jpg"), url("images/dolphin.jpg");
+    }
+    75% {
+        background-image: url("images/dolphin.jpg"), url("images/panda.jpg");
+    }
+    100% {
+        background-image: url("images/panda.jpg");
+    }
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+}
+#btn {
+  cursor: pointer;
+  flex: 1;
+  position: relative;
+  min-width:200px;
+  align-items: center;
+  background-color: rgb(182, 225, 241);
+  height:100px;
+  width:30%;
+  margin:10%;
+  border-radius: 70px;
+  border: solid 1px #0081D5;
+  color:#0081D5;
+  font-size: 28px;
+}
+.btn:hover {
+  background-color:#0081D5;
+  color:white;
+}
+#button {
+  cursor: pointer;
+  flex: 1;
+  float:right;
+  position: relative;
+  min-width:200px;
+  align-items: center;
+  background-color: rgba(245, 148, 119);
+  border: solid 1px rgb(250, 34, 6);
+  height:100px;
+  width: 30%;
+  margin:10%;
+  border-radius: 70px;
+  color:rgb(250, 34, 6);
+  font-size: 28px;
+}
+
+.button:hover {
+    background-color:rgb(255, 71, 46);
+    color:white;
+}
+
+#boot{
+  position:relative;
+  cursor: pointer;
+  min-width:200px;
+  align-items: center;
+  background-color: rgb(219, 209, 206);
+  border: solid 1px rgb(0, 0, 0);
+  height:100px;
+  width: 30%;
+  margin:0 auto;
+  border-radius: 70px;
+  color:rgb(0, 0, 0);
+  font-size: 28px;
+}

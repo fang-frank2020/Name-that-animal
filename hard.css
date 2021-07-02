@@ -1,0 +1,130 @@
+body {
+  display: flex;
+  background-color:#E57373;
+  margin: 50px 30%;
+  min-width: 1000px;
+  font-family:Sans-Serif;
+}
+
+#large_container_1 {
+  flex: 1;
+}
+
+#largecontainer_2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left:40px;
+}
+
+#rand_image {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width: 500px;
+  height: 400px;
+  margin:32px 0;
+  border: 3px solid;
+  border-radius: 10%;
+}
+
+.instructions {
+  position: relative;
+  color:white;
+}
+
+#enter {
+  display: flex;
+}
+
+#guess_ans {
+  font-size: 24px;
+  flex: 5;
+  margin-right: 10px;
+}
+
+#time_left {
+  color:white;
+  font-size: 24px;
+}
+
+#button {
+  background-color: #9CCC65;
+  cursor: pointer;
+  margin-left:20px;
+  flex: 1;
+}
+
+#response {
+  flex:2;
+  font-size:48px;
+  color:white;
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+#container {
+  margin: 30px 0;
+  display: flex;
+}
+
+#checkMark {
+  flex:1;
+  display: none;
+  width:2px;
+}
+#container_2 {
+  flex-direction: vertical;
+}
+
+#sol {
+  float:left;
+  display: none;
+  padding: 20px 32px;
+  background-color: rgb(228, 54, 127);
+  cursor: pointer;
+  width:175px;
+  border-radius: 20px;
+}
+
+#score {
+  color:white;
+  display: flex;
+  font-size: 24px;
+}
+
+#time {
+  color:white;
+  display: flex;
+  font-size: 24px
+}
+
+#next {
+  float:right;
+  display: none;
+  font-size:24px;
+  padding: 20px 32px;
+  background-color: #7E57C2;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+#sol_text {
+  color:white;
+  font-size:24px;
+  display:hidden;
+}
+
+#home {
+  cursor: pointer;
+  background-color: grey;
+  font-size:24px;
+  padding: 20px 32px;
+  float: left;
+  border-radius: 20px;
+}
+#fraction {
+  color:white;
+  font-size:24px;
+}

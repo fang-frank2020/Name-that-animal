@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard Animals</title>
+    <link rel = "stylesheet" href="hard.css" />
+</head>
+<body onload = "makeimg()">
+  <embed id = "song" src="A song.mp3" hidden="true" autostart="true">
+  </embed>
+  <div id = "large_container_1">
+    <img id = "rand_image"></img>
+    <div class = "instructions"> 
+      <h2>Enter What You See in the Image:</h2>
+    </div>
+    <div id = "enter">
+     <input id="guess_ans" type = "text" autocomplete="off" placeholder = "Enter here">
+     <button id = "button" onclick = "checker()"> Check </button>
+    </div>
+    <div id="container">
+      <img id="checkMark" />
+      <p id="response"> </p>
+    </div>
+    <div id = "container_2">
+      <button id = "home" onclick = "location.href='index.html'" class = "btn">Home</button>
+      <button id = "next" onclick = "changeimg()"> next page </button>
+    </div>
+  </div>
+  <div id = "largecontainer_2">
+    <p id = "time_left">Total Time Left:</p>
+    <p id = "time" >60 seconds</p>
+    <p id = "score">Score: 0 points</p>
+    <p id = "fraction"></p>
+    <button id = "sol" onclick = "show()"> Show Solution </button>
+    <p id= sol_text></p>
+  </div>
+  <script src="hard.js"> </script>
+</body>
+</html>
